@@ -2,3 +2,4 @@
 2024-12-13T19:05:17.662Z: [31merror[39m: GET /vehicle 401 1.654 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:05:17 GMT - error-message: -
 2024-12-13T19:06:17.085Z: [31merror[39m: GET /vehicle 401 0.173 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:06:17 GMT - error-message: -
 2024-12-13T19:06:31.906Z: [31merror[39m: POST /vehicle 401 16.085 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:06:31 GMT - error-message: -
+2024-12-13T19:58:44.480Z: [31merror[39m: POST /auth/user 400 10030.866 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Fri, 13 Dec 2024 19:58:44 GMT - error-message: Operation `users.findOne()` buffering timed out after 10000ms
