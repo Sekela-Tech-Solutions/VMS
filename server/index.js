@@ -16,7 +16,8 @@ mongoose
 const httpServer = http.createServer(app);
 
 const server = httpServer.listen(config.port, () => {
-  logger.info(`Server listening on port ${config.port}`);
+  logger.info(`Server started on http://localhost:${config.port}`);
+  logger.info(`Docs started on http://localhost:${config.port}/api-docs`);
 });
 
 process.on('uncaughtException', (error) => {

@@ -4,7 +4,7 @@ const envVarSchema = joi
     DB_CONNECTION: joi.string().required(),
     PORT: joi.number().positive().default(3000), 
   })
-  .unknown();// Allow other unknown environment variables
+  .unknown();
 
   module.exports = envVarSchema;
   

@@ -3,7 +3,7 @@ const swaggerDefinition = {
   info: {
     title: 'API Documentation',
     version: '1.0.0',
-    description: 'API documentation for the VMS',
+    description: 'API documentation for the VMS mini project',
   },
   servers: [
     {

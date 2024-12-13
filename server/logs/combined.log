@@ -1,0 +1,14 @@
+2024-12-13T20:03:41.986Z: [32minfo[39m: Server listening on port 3001
+2024-12-13T20:03:42.043Z: [32minfo[39m: GET /api-docs/ 304 3.239 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Fri, 13 Dec 2024 20:03:42 GMT
+2024-12-13T20:03:42.066Z: [32minfo[39m: GET /api-docs/swagger-ui.css 304 1.325 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Fri, 13 Dec 2024 20:03:42 GMT
+2024-12-13T20:03:42.073Z: [32minfo[39m: GET /api-docs/swagger-ui-bundle.js 304 1.485 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Fri, 13 Dec 2024 20:03:42 GMT
+2024-12-13T20:03:42.074Z: [32minfo[39m: GET /api-docs/swagger-ui-standalone-preset.js 304 2.302 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Fri, 13 Dec 2024 20:03:42 GMT
+2024-12-13T20:03:42.088Z: [32minfo[39m: GET /api-docs/swagger-ui-init.js 304 0.352 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Fri, 13 Dec 2024 20:03:42 GMT
+2024-12-13T20:03:42.593Z: [32minfo[39m: GET /api-docs/favicon-32x32.png 304 0.486 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Fri, 13 Dec 2024 20:03:42 GMT
+2024-12-13T20:05:37.415Z: [32minfo[39m: Server listening on http://localhost:3001
+2024-12-13T20:06:53.808Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-13T20:06:53.812Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
+2024-12-13T20:07:59.115Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-13T20:07:59.117Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
+2024-12-13T20:09:22.672Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-13T20:09:22.675Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
