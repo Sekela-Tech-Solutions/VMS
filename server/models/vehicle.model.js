@@ -42,6 +42,10 @@ const vehicleSchema = mongoose.Schema({
         type: Number, // price in relevant currency
         required: true,
     },
+    status: {
+        type: String, // NEW, SOLD
+        trim: true,
+    }
 }, {
     timestamps: true
 });

@@ -10,6 +10,7 @@ const httpStatus = require('http-status');
 const swaggerSpec = require('./swagger/swagger');
 
 const morgan = require('./config/morgan');
+const { Console } = require('winston/lib/winston/transports');
 app.use(morgan.errorHandler);
 app.use(morgan.successHandler);
 
@@ -22,8 +23,8 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use((req, res, next) => {
   next(new ApiError(httpStatus.NOT_FOUND, 'Not found'));
 });
- 
+
 app.use(errorConverter);
 app.use(errorHandler);
- 
+
 module.exports = app;

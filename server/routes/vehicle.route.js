@@ -25,12 +25,35 @@ const authenticateToken = require('../middlewares/authenticateToken');
  *                 properties:
  *                   id:
  *                     type: string
- *                   name:
- *                     type: string
- *                   brand:
- *                     type: string
- *                   price:
- *                     type: number
+ *               name:
+ *                 type: string
+ *                 example: Model S
+ *               brand:
+ *                 type: string
+ *                 example: Tesla
+ *               model:
+ *                 type: string
+ *                 example: New
+ *               year:
+ *                 type: integer
+ *                 example: 2024
+ *               engineCapacity:
+ *                 type: integer
+ *                 example: 4
+ *               fuelType:
+ *                 type: string
+ *               transmission:
+ *                 type: string
+ *                 example: Manual
+ *               color:
+ *                 type: string
+ *                 example: Red
+ *               price:
+ *                 type: number
+ *                 example: 79999
+ *               status:
+ *                 type: string
+ *                 example: NEW
  *       401:
  *         description: Unauthorized access.
  */
@@ -42,6 +65,8 @@ router.get('/vehicle', authenticateToken, vehicleController.getVehicles);
  *   post:
  *     summary: Create a new vehicle
  *     tags: [Vehicle]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -55,18 +80,132 @@ router.get('/vehicle', authenticateToken, vehicleController.getVehicles);
  *               brand:
  *                 type: string
  *                 example: Tesla
+ *               model:
+ *                 type: string
+ *                 example: New
  *               year:
  *                 type: integer
  *                 example: 2024
+ *               engineCapacity:
+ *                 type: integer
+ *                 example: 4
+ *               fuelType:
+ *                 type: string
+ *               transmission:
+ *                 type: string
+ *                 example: Manual
+ *               color:
+ *                 type: string
+ *                 example: Red
  *               price:
  *                 type: number
  *                 example: 79999
+ *               status:
+ *                 type: string
+ *                 example: NEW
  *     responses:
  *       201:
  *         description: Vehicle created successfully.
  *       400:
  *         description: Validation error.
  */
-router.post('/vehicle', authenticateToken, validate(vehicleValidation.createVehicleSchema), vehicleController.createVehicle);
+router.post(
+  '/vehicle',
+  authenticateToken,
+  validate(vehicleValidation.createVehicleSchema),
+  vehicleController.createVehicle
+);
+
+/**
+ * @swagger
+ * /vehicle/{id}:
+ *   put:
+ *     summary: Update all attributes of a vehicle by ID
+ *     tags: [Vehicle]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The ID of the vehicle to update
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *                 example: Model S
+ *               brand:
+ *                 type: string
+ *                 example: Tesla
+ *               model:
+ *                 type: string
+ *                 example: New
+ *               year:
+ *                 type: integer
+ *                 example: 2024
+ *               engineCapacity:
+ *                 type: integer
+ *                 example: 4
+ *               fuelType:
+ *                 type: string
+ *               transmission:
+ *                 type: string
+ *                 example: Manual
+ *               color:
+ *                 type: string
+ *                 example: Red
+ *               price:
+ *                 type: number
+ *                 example: 79999
+ *               status:
+ *                 type: string
+ *                 example: NEW
+ *     responses:
+ *       200:
+ *         description: Vehicle updated successfully.
+ *       404:
+ *         description: Vehicle not found.
+ */
+router.put('/vehicle/:id', authenticateToken, vehicleController.updateVehicle);
+
+/**
+ * @swagger
+ * /vehicle/{id}/status:
+ *   patch:
+ *     summary: Update the status of a vehicle by ID
+ *     tags: [Vehicle]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The ID of the vehicle to update
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               status:
+ *                 type: string
+ *                 example: SOLD
+ *     responses:
+ *       200:
+ *         description: Vehicle status updated successfully.
+ *       404:
+ *         description: Vehicle not found.
+ */
+router.patch('/vehicle/:id/status', authenticateToken, vehicleController.updateVehicleStatus);
 
 module.exports = router;

@@ -11,6 +11,7 @@ const createVehicleSchema = {
         transmission: joi.string().required().trim(),
         color: joi.string().trim().optional(),
         price: joi.number().required(),
+        status: joi.string().required().trim(),
     })
 };
 
