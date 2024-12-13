@@ -1,0 +1,17 @@
+2024-12-13T19:00:16.511Z: [32minfo[39m: Server listening on port 3001
+2024-12-13T19:00:52.710Z: [32minfo[39m: GET /auth/user 200 156.286 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:00:52 GMT
+2024-12-13T19:01:08.349Z: [32minfo[39m: POST /auth/user 201 341.319 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:01:08 GMT
+2024-12-13T19:01:31.374Z: [32minfo[39m: Server listening on port 3001
+2024-12-13T19:02:25.647Z: [32minfo[39m: GET /auth/user 200 148.539 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:02:25 GMT
+2024-12-13T19:02:32.047Z: [31merror[39m: POST /auth/user 400 143.548 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:02:32 GMT - error-message: Email is already taken
+2024-12-13T19:02:44.893Z: [32minfo[39m: POST /vehicle 201 136.219 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:02:44 GMT
+2024-12-13T19:03:21.584Z: [32minfo[39m: Server listening on port 3001
+2024-12-13T19:04:50.499Z: [32minfo[39m: Server listening on port 3001
+2024-12-13T19:05:07.472Z: [32minfo[39m: Server listening on port 3001
+2024-12-13T19:05:17.662Z: [31merror[39m: GET /vehicle 401 1.654 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:05:17 GMT - error-message: -
+2024-12-13T19:06:07.074Z: [32minfo[39m: GET /vehicle 200 146.906 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:06:07 GMT
+2024-12-13T19:06:17.085Z: [31merror[39m: GET /vehicle 401 0.173 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:06:17 GMT - error-message: -
+2024-12-13T19:06:23.153Z: [32minfo[39m: GET /vehicle 200 126.766 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:06:23 GMT
+2024-12-13T19:06:31.906Z: [31merror[39m: POST /vehicle 401 16.085 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:06:31 GMT - error-message: -
+2024-12-13T19:06:47.940Z: [32minfo[39m: POST /vehicle 201 140.828 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:06:47 GMT
+2024-12-13T19:06:57.379Z: [32minfo[39m: GET /vehicle 200 134.444 ms PostmanRuntime/7.43.0 Fri, 13 Dec 2024 19:06:57 GMT

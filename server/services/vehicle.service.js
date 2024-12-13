@@ -1,7 +1,6 @@
 const { vehicleModel } = require('../models');
 
 const createVehicle = async (body) => {
-    console.log('body', body)
    const vehicle = await vehicleModel.create(body);
    return vehicle;
 };
