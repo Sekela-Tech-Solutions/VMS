@@ -3,6 +3,7 @@ const app = express();
 const authRouter = require('./routes/auth.route');
 const vehicleRouter = require('./routes/vehicle.route');
 const swaggerUi = require('swagger-ui-express');
+const cors = require('cors');
 
 const { errorHandler, errorConverter } = require('./middlewares/error');
 const ApiError = require('./utils/ApiError');
@@ -10,9 +11,12 @@ const httpStatus = require('http-status');
 const swaggerSpec = require('./swagger/swagger');
 
 const morgan = require('./config/morgan');
-const { Console } = require('winston/lib/winston/transports');
+
 app.use(morgan.errorHandler);
 app.use(morgan.successHandler);
+app.use(cors({
+  origin: 'http://localhost:3000',  // Allow only requests from this frontend URL
+}));
 
 app.use(express.json());
 app.use(authRouter);

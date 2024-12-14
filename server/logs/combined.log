@@ -1,121 +1,43 @@
-2024-12-14T05:32:36.400Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:32:36.403Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:32:36.403Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:34:04.697Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:34:04.700Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:34:04.701Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:34:18.425Z: [32minfo[39m: GET /api-docs/ 304 7.645 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:18 GMT
-2024-12-14T05:34:18.487Z: [32minfo[39m: GET /api-docs/swagger-ui.css 304 1.662 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:18 GMT
-2024-12-14T05:34:18.508Z: [32minfo[39m: GET /api-docs/swagger-ui-bundle.js 304 1.952 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:18 GMT
-2024-12-14T05:34:18.529Z: [32minfo[39m: GET /api-docs/swagger-ui-init.js 200 1.255 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:18 GMT
-2024-12-14T05:34:18.531Z: [32minfo[39m: GET /api-docs/swagger-ui-standalone-preset.js 304 5.428 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:18 GMT
-2024-12-14T05:34:39.267Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:34:39.270Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:34:39.271Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:34:42.904Z: [32minfo[39m: GET /api-docs/ 304 5.367 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:42 GMT
-2024-12-14T05:34:42.949Z: [32minfo[39m: GET /api-docs/swagger-ui.css 304 2.023 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:42 GMT
-2024-12-14T05:34:42.953Z: [32minfo[39m: GET /api-docs/swagger-ui-bundle.js 304 1.067 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:42 GMT
-2024-12-14T05:34:42.954Z: [32minfo[39m: GET /api-docs/swagger-ui-standalone-preset.js 304 2.016 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:42 GMT
-2024-12-14T05:34:42.957Z: [32minfo[39m: GET /api-docs/swagger-ui-init.js 200 0.728 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:42 GMT
-2024-12-14T05:34:43.231Z: [32minfo[39m: GET /api-docs/favicon-32x32.png 304 0.871 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:43 GMT
-2024-12-14T05:34:54.889Z: [31merror[39m: POST /auth/user 404 46.920 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:34:54 GMT - error-message: Not found
-2024-12-14T05:35:31.693Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:35:31.696Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:35:31.697Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:35:34.745Z: [32minfo[39m: GET /api-docs/ 304 5.831 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:35:34 GMT
-2024-12-14T05:35:34.786Z: [32minfo[39m: GET /api-docs/swagger-ui.css 304 1.932 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:35:34 GMT
-2024-12-14T05:35:34.791Z: [32minfo[39m: GET /api-docs/swagger-ui-bundle.js 304 0.735 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:35:34 GMT
-2024-12-14T05:35:34.808Z: [32minfo[39m: GET /api-docs/swagger-ui-init.js 200 0.449 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:35:34 GMT
-2024-12-14T05:35:34.809Z: [32minfo[39m: GET /api-docs/swagger-ui-standalone-preset.js 304 2.399 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:35:34 GMT
-2024-12-14T05:35:35.021Z: [32minfo[39m: GET /api-docs/favicon-32x32.png 304 0.921 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:35:35 GMT
-2024-12-14T05:35:45.037Z: [32minfo[39m: POST /auth/signup 201 498.213 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:35:45 GMT
-2024-12-14T05:37:26.515Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:37:26.518Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:37:26.520Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:37:45.747Z: [32minfo[39m: GET /api-docs/ 304 6.088 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:37:45 GMT
-2024-12-14T05:37:45.798Z: [32minfo[39m: GET /api-docs/swagger-ui.css 304 2.099 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:37:45 GMT
-2024-12-14T05:37:45.803Z: [32minfo[39m: GET /api-docs/swagger-ui-bundle.js 304 1.581 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:37:45 GMT
-2024-12-14T05:37:45.806Z: [32minfo[39m: GET /api-docs/swagger-ui-init.js 304 0.349 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:37:45 GMT
-2024-12-14T05:37:45.807Z: [32minfo[39m: GET /api-docs/swagger-ui-standalone-preset.js 304 2.745 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:37:45 GMT
-2024-12-14T05:37:46.011Z: [32minfo[39m: GET /api-docs/favicon-32x32.png 304 0.894 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:37:46 GMT
-2024-12-14T05:38:06.397Z: [32minfo[39m: POST /auth/signup 201 503.090 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:38:06 GMT
-2024-12-14T05:39:03.382Z: [31merror[39m: POST /auth/signin 400 3.655 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:39:03 GMT - error-message: "email" is required
-2024-12-14T05:39:12.041Z: [31merror[39m: POST /auth/signin 400 2.732 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:39:12 GMT - error-message: "email" is required
-2024-12-14T05:40:03.688Z: [31merror[39m: POST /auth/signin 400 1.703 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:40:03 GMT - error-message: "email" is required
-2024-12-14T05:40:24.531Z: [32minfo[39m: POST /auth/signup 201 434.270 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:40:24 GMT
-2024-12-14T05:46:08.380Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:46:08.383Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:46:08.383Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:46:16.786Z: [31merror[39m: POST /auth/signin 400 28.264 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:46:16 GMT - error-message: "email" is required
-2024-12-14T05:46:46.040Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:46:46.042Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:46:46.043Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:46:49.109Z: [31merror[39m: POST /auth/signin 400 37.348 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:46:49 GMT - error-message: "email" is required
-2024-12-14T05:47:54.824Z: [31merror[39m: POST /auth/signin 400 3.010 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:47:54 GMT - error-message: "email" is required
-2024-12-14T05:47:56.673Z: [31merror[39m: POST /auth/signin 400 1.902 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:47:56 GMT - error-message: "email" is required
-2024-12-14T05:48:06.829Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:48:06.831Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:48:06.832Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:48:09.348Z: [31merror[39m: POST /auth/signin 400 36.556 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:48:09 GMT - error-message: "email" is required
-2024-12-14T05:48:14.117Z: [31merror[39m: POST /auth/signin 400 2.350 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:48:14 GMT - error-message: "email" is required
-2024-12-14T05:48:44.858Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:48:44.862Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:48:44.863Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:48:48.367Z: [31merror[39m: POST /auth/signin 400 23.261 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:48:48 GMT - error-message: "password" is required
-2024-12-14T05:48:58.731Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:48:58.733Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:48:58.733Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:49:01.410Z: [31merror[39m: POST /auth/signin 401 212.541 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:49:01 GMT - error-message: Invalid email or password
-2024-12-14T05:49:50.720Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:49:50.723Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:49:50.724Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:51:42.005Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:51:42.007Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:51:42.008Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:52:17.289Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:52:17.291Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:52:17.292Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:52:56.115Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:52:56.118Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:52:56.119Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:53:01.363Z: [31merror[39m: POST /auth/signin 401 268.216 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:53:01 GMT - error-message: Invalid email or password
-2024-12-14T05:53:36.675Z: [32minfo[39m: POST /auth/signup 201 364.290 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:53:36 GMT
-2024-12-14T05:53:40.995Z: [31merror[39m: POST /auth/signin 500 223.863 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:53:40 GMT - error-message: bcrypt is not defined
-2024-12-14T05:54:59.256Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:54:59.258Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:54:59.259Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:55:06.568Z: [31merror[39m: POST /auth/signin 401 216.340 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:55:06 GMT - error-message: Invalid email or password
-2024-12-14T05:56:11.534Z: [31merror[39m: POST /auth/signin 401 165.848 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:56:11 GMT - error-message: Invalid email or password
-2024-12-14T05:56:11.832Z: [31merror[39m: POST /auth/signin 401 139.410 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 05:56:11 GMT - error-message: Invalid email or password
-2024-12-14T05:58:51.323Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:58:51.326Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:58:51.326Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T05:59:28.027Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T05:59:28.029Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T05:59:28.030Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T06:04:21.554Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T06:04:21.556Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T06:04:21.557Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T06:06:07.661Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T06:06:07.663Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T06:06:07.664Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T06:08:52.844Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T06:08:52.847Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T06:08:52.848Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T06:09:28.980Z: [31merror[39m: POST /auth/signup 400 209.060 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 06:09:28 GMT - error-message: Email is already taken
-2024-12-14T06:09:39.889Z: [32minfo[39m: POST /auth/signup 201 551.504 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 06:09:39 GMT
-2024-12-14T06:11:07.933Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T06:11:07.936Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T06:11:07.936Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T06:11:26.622Z: [32minfo[39m: POST /auth/signup 201 538.559 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 06:11:26 GMT
-2024-12-14T06:11:36.307Z: [31merror[39m: POST /auth/signin 401 169.506 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 06:11:36 GMT - error-message: Invalid email or password
-2024-12-14T06:11:46.567Z: [32minfo[39m: POST /auth/signin 200 292.259 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 06:11:46 GMT
-2024-12-14T06:11:59.599Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T06:11:59.602Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T06:11:59.602Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T06:15:05.058Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T06:15:05.062Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T06:15:05.062Z: [32minfo[39m: wait for DB connection ...
-2024-12-14T06:15:44.170Z: [32minfo[39m: Server started on http://localhost:3001
-2024-12-14T06:15:44.172Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
-2024-12-14T06:15:44.173Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T09:06:58.769Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T09:06:58.772Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
+2024-12-14T09:06:58.773Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T09:07:54.146Z: [32minfo[39m: OPTIONS /auth/signup 200 1.372 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:07:54 GMT
+2024-12-14T09:08:12.596Z: [32minfo[39m: OPTIONS /auth/signup 200 0.397 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:08:12 GMT
+2024-12-14T09:09:55.257Z: [32minfo[39m: OPTIONS /auth/signup 200 0.345 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:09:55 GMT
+2024-12-14T09:36:52.914Z: [32minfo[39m: OPTIONS /auth/signup 200 0.255 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:36:52 GMT
+2024-12-14T09:36:57.650Z: [32minfo[39m: OPTIONS /auth/signup 200 0.170 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:36:57 GMT
+2024-12-14T09:39:38.576Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T09:39:38.579Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
+2024-12-14T09:39:38.580Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T09:39:46.877Z: [32minfo[39m: OPTIONS /auth/signup 200 1.801 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:39:46 GMT
+2024-12-14T09:40:42.307Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T09:40:42.311Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
+2024-12-14T09:40:42.312Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T09:40:55.171Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T09:40:55.174Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
+2024-12-14T09:40:55.175Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T09:40:59.012Z: [32minfo[39m: OPTIONS /auth/signup 204 0.878 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:40:59 GMT
+2024-12-14T09:40:59.215Z: [31merror[39m: POST /auth/signup 400 199.092 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:40:59 GMT - error-message: Email is already taken
+2024-12-14T09:41:06.463Z: [32minfo[39m: OPTIONS /auth/signup 204 0.121 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:41:06 GMT
+2024-12-14T09:41:07.038Z: [32minfo[39m: POST /auth/signup 201 572.279 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:41:07 GMT
+2024-12-14T09:42:52.878Z: [31merror[39m: POST /auth/signin 401 152.688 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:42:52 GMT - error-message: Invalid email or password
+2024-12-14T09:43:02.362Z: [31merror[39m: POST /auth/signup 400 217.974 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:43:02 GMT - error-message: Email is already taken
+2024-12-14T09:43:10.977Z: [32minfo[39m: POST /auth/signup 201 462.820 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:43:10 GMT
+2024-12-14T09:43:20.804Z: [32minfo[39m: POST /auth/signin 200 242.460 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:43:20 GMT
+2024-12-14T09:43:40.237Z: [32minfo[39m: OPTIONS /auth/signin 204 0.115 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:43:40 GMT
+2024-12-14T09:43:40.454Z: [32minfo[39m: POST /auth/signin 200 215.990 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:43:40 GMT
+2024-12-14T09:43:40.471Z: [32minfo[39m: OPTIONS /vehicle 204 0.115 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:43:40 GMT
+2024-12-14T09:43:40.473Z: [32minfo[39m: OPTIONS /vehicle 204 0.137 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:43:40 GMT
+2024-12-14T09:43:40.621Z: [32minfo[39m: GET /vehicle 200 145.953 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:43:40 GMT
+2024-12-14T09:43:40.778Z: [32minfo[39m: GET /vehicle 304 156.044 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:43:40 GMT
+2024-12-14T09:44:04.457Z: [32minfo[39m: OPTIONS /vehicle 204 0.111 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:04 GMT
+2024-12-14T09:44:04.459Z: [32minfo[39m: OPTIONS /vehicle 204 0.092 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:04 GMT
+2024-12-14T09:44:04.890Z: [32minfo[39m: GET /vehicle 304 428.565 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:04 GMT
+2024-12-14T09:44:05.032Z: [32minfo[39m: GET /vehicle 304 140.470 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:05 GMT
+2024-12-14T09:44:25.154Z: [31merror[39m: GET /vehicle 401 0.306 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:25 GMT - error-message: -
+2024-12-14T09:44:25.157Z: [31merror[39m: GET /vehicle 401 0.266 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:25 GMT - error-message: -
+2024-12-14T09:44:32.976Z: [32minfo[39m: OPTIONS /auth/signup 204 0.091 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:32 GMT
+2024-12-14T09:44:32.981Z: [31merror[39m: POST /auth/signup 400 2.409 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:32 GMT - error-message: "body.fullName" is not allowed to be empty
+2024-12-14T09:44:33.862Z: [31merror[39m: POST /auth/signup 400 1.200 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:33 GMT - error-message: "body.fullName" is not allowed to be empty
+2024-12-14T09:44:34.065Z: [31merror[39m: POST /auth/signup 400 0.803 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:34 GMT - error-message: "body.fullName" is not allowed to be empty
+2024-12-14T09:44:34.283Z: [31merror[39m: POST /auth/signup 400 1.476 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 09:44:34 GMT - error-message: "body.fullName" is not allowed to be empty

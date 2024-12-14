@@ -34,20 +34,6 @@ const authenticateToken = require('../middlewares/authenticateToken');
  *               model:
  *                 type: string
  *                 example: New
- *               year:
- *                 type: integer
- *                 example: 2024
- *               engineCapacity:
- *                 type: integer
- *                 example: 4
- *               fuelType:
- *                 type: string
- *               transmission:
- *                 type: string
- *                 example: Manual
- *               color:
- *                 type: string
- *                 example: Red
  *               price:
  *                 type: number
  *                 example: 79999
@@ -83,20 +69,6 @@ router.get('/vehicle', authenticateToken, vehicleController.getVehicles);
  *               model:
  *                 type: string
  *                 example: New
- *               year:
- *                 type: integer
- *                 example: 2024
- *               engineCapacity:
- *                 type: integer
- *                 example: 4
- *               fuelType:
- *                 type: string
- *               transmission:
- *                 type: string
- *                 example: Manual
- *               color:
- *                 type: string
- *                 example: Red
  *               price:
  *                 type: number
  *                 example: 79999
@@ -147,20 +119,6 @@ router.post(
  *               model:
  *                 type: string
  *                 example: New
- *               year:
- *                 type: integer
- *                 example: 2024
- *               engineCapacity:
- *                 type: integer
- *                 example: 4
- *               fuelType:
- *                 type: string
- *               transmission:
- *                 type: string
- *                 example: Manual
- *               color:
- *                 type: string
- *                 example: Red
  *               price:
  *                 type: number
  *                 example: 79999
