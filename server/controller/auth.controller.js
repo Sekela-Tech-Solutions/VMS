@@ -1,26 +1,28 @@
 const catchAsync = require('../utils/catchAsync');
-const { userService } = require('./../services');
+const { authService } = require('./../services');
 const tokenService = require("./../services/token.service");
 
 const httpStatus = require('http-status');
 
-const createUser = catchAsync(async (req, res) => {
-  const user = await userService.createUser(req.body);
-  const token = tokenService.generateAuthToken(user._id);
+const signUp = catchAsync(async (req, res) => {
+  const user = await authService.signUp(req.body);
   
   res
     .status(httpStatus.CREATED)
-    .send({ success: true, message: 'User created successfully', data: user, token });
+    .send({ success: true, message: 'User created successfully', data: user });
 });
 
-const getUsers = catchAsync(async (req, res) => {
-  const users = await userService.getUsers();
+const signIn = catchAsync(async (req, res) => {
+
+  const user = await authService.signIn(req.body);
+  const token = tokenService.generateAuthToken(user._id);
+
   res
-    .status(httpStatus.OK)
-    .json(users);
+      .status(httpStatus.OK)
+      .send({ success: true, message: 'Sign-in successful', token, data: user });
 });
 
 module.exports = {
-  createUser,
-  getUsers,
+  signUp,
+  signIn,
 };

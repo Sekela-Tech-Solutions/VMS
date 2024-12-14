@@ -17,7 +17,7 @@ const updateVehicle = async (vehicleId, body) => {
     const updatedVehicle = await vehicleModel.findByIdAndUpdate(
         vehicleId,
         body,
-        { new: true, runValidators: true } // `new: true` returns the updated document, `runValidators` ensures validation
+        { new: true, runValidators: true }
     );
     return updatedVehicle;
 };
