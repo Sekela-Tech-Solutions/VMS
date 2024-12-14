@@ -1,0 +1,9 @@
+2024-12-14T13:57:00.634Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T13:57:00.637Z: [32minfo[39m: Docs started on http://localhost:3001/api-docs
+2024-12-14T13:57:00.638Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T13:57:22.469Z: [32minfo[39m: GET / 200 13.321 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 13:57:22 GMT
+2024-12-14T13:57:22.519Z: [32minfo[39m: GET /swagger-ui-init.js 200 0.404 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 13:57:22 GMT
+2024-12-14T13:57:22.529Z: [32minfo[39m: GET /swagger-ui.css 200 26.077 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 13:57:22 GMT
+2024-12-14T13:57:22.540Z: [32minfo[39m: GET /swagger-ui-standalone-preset.js 200 10.571 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 13:57:22 GMT
+2024-12-14T13:57:22.560Z: [32minfo[39m: GET /swagger-ui-bundle.js 200 14.138 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 13:57:22 GMT
+2024-12-14T13:57:22.953Z: [32minfo[39m: GET /favicon-32x32.png 200 4.759 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 13:57:22 GMT
