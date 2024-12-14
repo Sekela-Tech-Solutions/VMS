@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, IconButton } from '@mui/material';
-import { Edit, Delete, Refresh } from '@mui/icons-material'; // Import the icons you need
+import { Snackbar, Alert } from '@mui/material';
 import api from '../../api/Api';
 import Navbar from '../layout/Navbar';
+import VehicleTable from './VehicleTable';
+import VehicleDialog from './VehicleDialog';
 
 const VehicleDashboard = () => {
   const [vehicles, setVehicles] = useState([]);
+  const [openUpdateDialog, setOpenUpdateDialog] = useState(false);
+  const [openStatusDialog, setOpenStatusDialog] = useState(false);
+  const [currentVehicle, setCurrentVehicle] = useState(null);
+  const [toastMessage, setToastMessage] = useState('');
+  const [toastType, setToastType] = useState('success');
+  const [openToast, setOpenToast] = useState(false);
 
   useEffect(() => {
     fetchVehicles();
@@ -14,65 +21,102 @@ const VehicleDashboard = () => {
   const fetchVehicles = async () => {
     try {
       const response = await api.get('/vehicle');
-      console.log('response.data', response.data);
       setVehicles(response.data);
     } catch (error) {
-      console.error('Failed to fetch vehicles:', error);
+      showToast('Failed to fetch vehicles', 'error');
     }
   };
 
-  const handleUpdate = (vehicleId) => {
-    console.log(`Update vehicle with ID: ${vehicleId}`);
-    // Add your update logic here (e.g., open a modal to update vehicle details)
+  const showToast = (message, type) => {
+    setToastMessage(message);
+    setToastType(type);
+    setOpenToast(true);
   };
 
-  const handleChangeStatus = (vehicleId) => {
-    console.log(`Change status for vehicle with ID: ${vehicleId}`);
-    // Add your change status logic here
+  const handleUpdate = (vehicle) => {
+    setCurrentVehicle(vehicle);
+    setOpenUpdateDialog(true);
   };
 
-  const handleDelete = (vehicleId) => {
-    console.log(`Delete vehicle with ID: ${vehicleId}`);
-    // Add your delete logic here (e.g., API call to delete the vehicle)
+  const handleChangeStatus = (vehicle) => {
+    setCurrentVehicle(vehicle);
+    setOpenStatusDialog(true);
   };
+
+  const handleDelete = (vehicle) => {
+    setCurrentVehicle(vehicle);
+    showToast('Vehicle deleted successfully', 'error');
+  };
+
+  const handleUpdateSubmit = async (updatedVehicle) => {
+    try {
+      await api.put(`/vehicle/${currentVehicle._id}`, updatedVehicle);
+      fetchVehicles();
+      setOpenUpdateDialog(false);
+      showToast('Vehicle updated successfully', 'success');
+    } catch (error) {
+      showToast('Failed to update vehicle', 'error');
+    }
+  };
+
+  const handleStatusSubmit = async () => {
+    try {
+      const status = currentVehicle.status === "SOLD" ? "NEW" : "SOLD";
+      await api.patch(`/vehicle/${currentVehicle._id}/status`, { status });
+      fetchVehicles();
+      setOpenStatusDialog(false);
+      showToast('Status updated successfully', 'success');
+    } catch (error) {
+      showToast('Failed to update status', 'error');
+    }
+  };
+  
+
+  // const handleDeleteSubmit = async () => {
+  //   try {
+  //     await api.delete(`/vehicle/${currentVehicle._id}`);
+  //     fetchVehicles();
+  //     setOpenStatusDialog(false);
+  //     showToast('Vehicle deleted successfully', 'error');
+  //   } catch (error) {
+  //     showToast('Failed to delete vehicle', 'error');
+  //   }
+  // };
 
   return (
     <>
       <Navbar />
-      <TableContainer component={Paper} sx={{ mt: 4 }}>
-        <Table>
-          <TableHead sx={{backgroundColor: 'GrayText'}}>
-            <TableRow>
-              <TableCell>Name</TableCell>
-              <TableCell>Brand</TableCell>
-              <TableCell>Year</TableCell>
-              <TableCell>Price</TableCell>
-              <TableCell>Action</TableCell> {/* Add Action column */}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {vehicles.map((vehicle) => (
-              <TableRow key={vehicle._id}> {/* Use _id as the key */}
-                <TableCell>{vehicle.name}</TableCell>
-                <TableCell>{vehicle.brand}</TableCell>
-                <TableCell>{vehicle.year}</TableCell>
-                <TableCell>{vehicle.price}</TableCell>
-                <TableCell>
-                  <IconButton onClick={() => handleUpdate(vehicle._id)} color="primary">
-                    <Edit />
-                  </IconButton>
-                  <IconButton onClick={() => handleChangeStatus(vehicle._id)} color="secondary">
-                    <Refresh />
-                  </IconButton>
-                  <IconButton onClick={() => handleDelete(vehicle._id)} color="error">
-                    <Delete />
-                  </IconButton>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+      <VehicleTable
+        vehicles={vehicles}
+        onEdit={handleUpdate}
+        onChangeStatus={handleChangeStatus}
+        onDelete={handleDelete}
+      />
+      <VehicleDialog
+        open={openUpdateDialog}
+        onClose={() => setOpenUpdateDialog(false)}
+        onSubmit={handleUpdateSubmit}
+        vehicle={currentVehicle}
+        type="update"
+      />
+      <VehicleDialog
+        open={openStatusDialog}
+        onClose={() => setOpenStatusDialog(false)}
+        onSubmit={handleStatusSubmit}
+        vehicle={currentVehicle}
+        type="status"
+      />
+      
+      {/* Toast Notification */}
+      <Snackbar
+        open={openToast}
+        autoHideDuration={6000}
+        onClose={() => setOpenToast(false)}
+      >
+        <Alert onClose={() => setOpenToast(false)} severity={toastType}>
+          {toastMessage}
+        </Alert>
+      </Snackbar>
     </>
   );
 };
