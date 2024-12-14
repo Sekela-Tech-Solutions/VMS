@@ -7,3 +7,27 @@
 2024-12-14T13:57:22.540Z: [32minfo[39m: GET /swagger-ui-standalone-preset.js 200 10.571 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 13:57:22 GMT
 2024-12-14T13:57:22.560Z: [32minfo[39m: GET /swagger-ui-bundle.js 200 14.138 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 13:57:22 GMT
 2024-12-14T13:57:22.953Z: [32minfo[39m: GET /favicon-32x32.png 200 4.759 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 13:57:22 GMT
+2024-12-14T13:57:54.576Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T13:57:54.579Z: [32minfo[39m: Docs started on http://localhost:3001
+2024-12-14T13:57:54.579Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T14:10:04.971Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T14:10:04.974Z: [32minfo[39m: Docs started on http://localhost:3001/
+2024-12-14T14:10:04.975Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T14:10:07.947Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T14:10:07.949Z: [32minfo[39m: Docs started on http://localhost:3001/docs
+2024-12-14T14:10:07.950Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T14:10:12.731Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T14:10:12.733Z: [32minfo[39m: Docs started on http://localhost:3001/apis
+2024-12-14T14:10:12.734Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T14:10:28.193Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T14:10:28.196Z: [32minfo[39m: Docs started on http://localhost:3001/apis
+2024-12-14T14:10:28.197Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T14:10:34.371Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T14:10:34.373Z: [32minfo[39m: Docs started on http://localhost:3001/apis
+2024-12-14T14:10:34.374Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T14:10:58.566Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T14:10:58.568Z: [32minfo[39m: Docs started on http://localhost:3001/apis
+2024-12-14T14:10:58.568Z: [32minfo[39m: wait for DB connection ...
+2024-12-14T14:11:11.153Z: [32minfo[39m: Server started on http://localhost:3001
+2024-12-14T14:11:11.156Z: [32minfo[39m: Docs started on http://localhost:3001/docs
+2024-12-14T14:11:11.156Z: [32minfo[39m: wait for DB connection ...

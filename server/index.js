@@ -17,7 +17,7 @@ const httpServer = http.createServer(app);
 
 const server = httpServer.listen(config.port, () => {
   logger.info(`Server started on http://localhost:${config.port}`);
-  logger.info(`Docs started on http://localhost:${config.port}`);
+  logger.info(`Docs started on http://localhost:${config.port}/docs`);
   logger.info(`wait for DB connection ...`);
 
 });
