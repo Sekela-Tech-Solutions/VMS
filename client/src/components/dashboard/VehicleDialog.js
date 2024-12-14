@@ -29,7 +29,7 @@ const VehicleDialog = ({ open, onClose, onSubmit, vehicle, type }) => {
 
   return (
     <Dialog open={open} onClose={onClose}>
-      <DialogTitle>{type === 'update' ? 'Update Vehicle' : 'Change Status'}</DialogTitle>
+      <DialogTitle>{type === 'update' ? 'Update Vehicle': type=== 'add'? 'Add Vehicle': 'Change Status'}</DialogTitle>
       <DialogContent>
         {type === 'update' || type === 'add'? (
           <>
