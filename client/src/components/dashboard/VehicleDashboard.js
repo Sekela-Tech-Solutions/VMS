@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Snackbar, Alert } from '@mui/material';
+import { Snackbar, Alert, Button, Box } from '@mui/material';
 import api from '../../api/Api';
 import Navbar from '../layout/Navbar';
 import VehicleTable from './VehicleTable';
@@ -9,6 +9,7 @@ const VehicleDashboard = () => {
   const [vehicles, setVehicles] = useState([]);
   const [openUpdateDialog, setOpenUpdateDialog] = useState(false);
   const [openStatusDialog, setOpenStatusDialog] = useState(false);
+  const [openAddDialog, setOpenAddDialog] = useState(false);
   const [currentVehicle, setCurrentVehicle] = useState(null);
   const [toastMessage, setToastMessage] = useState('');
   const [toastType, setToastType] = useState('success');
@@ -61,7 +62,7 @@ const VehicleDashboard = () => {
 
   const handleStatusSubmit = async () => {
     try {
-      const status = currentVehicle.status === "SOLD" ? "NEW" : "SOLD";
+      const status = currentVehicle.status === 'SOLD' ? 'NEW' : 'SOLD';
       await api.patch(`/vehicle/${currentVehicle._id}/status`, { status });
       fetchVehicles();
       setOpenStatusDialog(false);
@@ -70,22 +71,46 @@ const VehicleDashboard = () => {
       showToast('Failed to update status', 'error');
     }
   };
-  
 
-  // const handleDeleteSubmit = async () => {
-  //   try {
-  //     await api.delete(`/vehicle/${currentVehicle._id}`);
-  //     fetchVehicles();
-  //     setOpenStatusDialog(false);
-  //     showToast('Vehicle deleted successfully', 'error');
-  //   } catch (error) {
-  //     showToast('Failed to delete vehicle', 'error');
-  //   }
-  // };
+  const handleAddSubmit = async (newVehicle) => {
+    try {
+      await api.post('/vehicle', newVehicle);
+      fetchVehicles();
+      setOpenAddDialog(false);
+      showToast('Vehicle added successfully', 'success');
+    } catch (error) {
+      showToast('Failed to add vehicle', 'error');
+    }
+  };
 
   return (
     <>
       <Navbar />
+      <Box display="flex" justifyContent="space-between" alignItems="center"  sx={{
+          mt: 4,
+          mb: 2,
+          width: {
+            xs: '100%', 
+            sm: '80%',   
+            md: '70%',    
+            lg: '60%',
+          },
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}>
+
+        <h2>Vehicles list</h2>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => {
+            setCurrentVehicle(null);
+            setOpenAddDialog(true);
+          }}
+        >
+          Add New Vehicle
+        </Button>
+      </Box>
       <VehicleTable
         vehicles={vehicles}
         onEdit={handleUpdate}
@@ -105,6 +130,13 @@ const VehicleDashboard = () => {
         onSubmit={handleStatusSubmit}
         vehicle={currentVehicle}
         type="status"
+      />
+      <VehicleDialog
+        open={openAddDialog}
+        onClose={() => setOpenAddDialog(false)}
+        onSubmit={handleAddSubmit}
+        vehicle={{ name: '', brand: '', model: '', price: '', status: 'NEW' }}
+        type="add"
       />
       
       {/* Toast Notification */}

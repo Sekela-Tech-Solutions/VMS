@@ -4,7 +4,19 @@ import { Edit, ChangeCircleTwoTone } from '@mui/icons-material';
 
 const VehicleTable = ({ vehicles, onEdit, onChangeStatus }) => {
     return (
-        <TableContainer component={Paper} sx={{ mt: 4 }}>
+        <TableContainer   component={Paper}
+        sx={{
+          mt: 4,
+          width: {
+            xs: '100%', 
+            sm: '80%',   
+            md: '70%',    
+            lg: '60%',
+          },
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}
+      >
             <Table>
                 <TableHead>
                     <TableRow sx={{ backgroundColor: 'rgba(25, 118, 210, 0.12)' }}>

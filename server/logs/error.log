@@ -1,0 +1,1 @@
+2024-12-14T10:35:57.928Z: [31merror[39m: POST /auth/signin 401 101.996 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 10:35:57 GMT - error-message: Invalid email or password

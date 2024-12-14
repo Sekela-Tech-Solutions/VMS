@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Dialog, DialogActions, DialogContent, DialogTitle, TextField, Button } from '@mui/material';
+import { Dialog, DialogActions, DialogContent, DialogTitle, TextField, Button, MenuItem, Select, FormControl, InputLabel } from '@mui/material';
 
 const VehicleDialog = ({ open, onClose, onSubmit, vehicle, type }) => {
   const [vehicleData, setVehicleData] = useState({
@@ -31,7 +31,7 @@ const VehicleDialog = ({ open, onClose, onSubmit, vehicle, type }) => {
     <Dialog open={open} onClose={onClose}>
       <DialogTitle>{type === 'update' ? 'Update Vehicle' : 'Change Status'}</DialogTitle>
       <DialogContent>
-        {type === 'update' ? (
+        {type === 'update' || type === 'add'? (
           <>
             <TextField
               label="Name"
@@ -66,14 +66,17 @@ const VehicleDialog = ({ open, onClose, onSubmit, vehicle, type }) => {
               onChange={handleInputChange}
               margin="normal"
             />
-            <TextField
-              label="Status"
-              fullWidth
-              name="status"
-              value={vehicleData.status}
-              onChange={handleInputChange}
-              margin="normal"
-            />
+            <FormControl fullWidth margin="normal">
+              <InputLabel>Status</InputLabel>
+              <Select
+                name="status"
+                value={vehicleData.status}
+                onChange={handleInputChange}
+              >
+                <MenuItem value="NEW">NEW</MenuItem>
+                <MenuItem value="SOLD">SOLD</MenuItem>
+              </Select>
+            </FormControl>
           </>
         ) : (
           <>
@@ -83,7 +86,7 @@ const VehicleDialog = ({ open, onClose, onSubmit, vehicle, type }) => {
       </DialogContent>
       <DialogActions>
         <Button onClick={onClose} color="secondary">Cancel</Button>
-        <Button onClick={handleSubmit} color="primary">{type === 'update' ? 'Update' : 'Change Status'}</Button>
+        <Button onClick={handleSubmit} color="primary">{type === 'update' ? 'Update' : type === 'add' ? 'add' : 'Change Status'}</Button>
       </DialogActions>
     </Dialog>
   );
