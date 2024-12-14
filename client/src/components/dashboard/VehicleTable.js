@@ -22,7 +22,7 @@ const VehicleTable = ({ vehicles, onEdit, onChangeStatus }) => {
                     <TableRow sx={{ backgroundColor: 'rgba(25, 118, 210, 0.12)' }}>
                         <TableCell sx={{ fontWeight: 'bold' }}>Name</TableCell>
                         <TableCell sx={{ fontWeight: 'bold' }}>Brand</TableCell>
-                        <TableCell sx={{ fontWeight: 'bold' }}>Year</TableCell>
+                        <TableCell sx={{ fontWeight: 'bold' }}>model</TableCell>
                         <TableCell sx={{ fontWeight: 'bold' }}>Price</TableCell>
                         <TableCell sx={{ fontWeight: 'bold' }}>Change Status</TableCell>
                         <TableCell sx={{ fontWeight: 'bold' }}>Action</TableCell>
@@ -33,7 +33,7 @@ const VehicleTable = ({ vehicles, onEdit, onChangeStatus }) => {
                         <TableRow key={vehicle._id}>
                             <TableCell>{vehicle.name}</TableCell>
                             <TableCell>{vehicle.brand}</TableCell>
-                            <TableCell>{vehicle.year}</TableCell>
+                            <TableCell>{vehicle.model}</TableCell>
                             <TableCell>{vehicle.price}</TableCell>
                             <TableCell>
                                 <IconButton

@@ -1,18 +1,24 @@
 import React, { useState } from 'react';
-import { TextField, Button, Box, Typography, Link } from '@mui/material';
+import { TextField, Button, Box, Typography, Link, IconButton, InputAdornment } from '@mui/material';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import {publicApi} from './../../api/Apis';
 
 const Signin = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
+
+  const handlePasswordVisibility = () => {
+    setShowPassword((prev) => !prev);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/auth/signin', formData);
+      const response = await publicApi.post('/auth/signin', formData);
       localStorage.setItem('authToken', response.data.token);
-      navigate('/dashboard');
+      navigate('/');
     } catch (error) {
       console.error(error.response?.data?.message || 'Signin failed');
     }
@@ -51,15 +57,24 @@ const Signin = () => {
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           />
-          <TextField
+   <TextField
             fullWidth
             margin="normal"
             label="Password"
-            type="password"
+            type={showPassword ? 'text' : 'password'}
             value={formData.password}
             onChange={(e) =>
               setFormData({ ...formData, password: e.target.value })
             }
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton onClick={handlePasswordVisibility} edge="end">
+                    {showPassword ? <VisibilityOff /> : <Visibility />}
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
           />
           <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
             Sign In

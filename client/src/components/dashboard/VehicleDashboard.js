@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Snackbar, Alert, Button, Box } from '@mui/material';
-import api from '../../api/Api';
+import {api} from '../../api/Apis';
 import Navbar from '../layout/Navbar';
 import VehicleTable from './VehicleTable';
 import VehicleDialog from './VehicleDialog';
@@ -15,24 +15,24 @@ const VehicleDashboard = () => {
   const [toastType, setToastType] = useState('success');
   const [openToast, setOpenToast] = useState(false);
 
-  useEffect(() => {
-    fetchVehicles();
+  const showToast = useCallback((message, type) => {
+    setToastMessage(message);
+    setToastType(type);
+    setOpenToast(true);
   }, []);
 
-  const fetchVehicles = async () => {
+  const fetchVehicles = useCallback(async () => {
     try {
       const response = await api.get('/vehicle');
       setVehicles(response.data);
     } catch (error) {
       showToast('Failed to fetch vehicles', 'error');
     }
-  };
+  }, [showToast, setVehicles]); 
 
-  const showToast = (message, type) => {
-    setToastMessage(message);
-    setToastType(type);
-    setOpenToast(true);
-  };
+  useEffect(() => {
+    fetchVehicles();
+  }, [fetchVehicles]);
 
   const handleUpdate = (vehicle) => {
     setCurrentVehicle(vehicle);
@@ -84,11 +84,11 @@ const VehicleDashboard = () => {
   };
 
   return (
-    <>
+    <Box sx={{mb: 10}}>
       <Navbar />
       <Box display="flex" justifyContent="space-between" alignItems="center"  sx={{
-          mt: 4,
-          mb: 2,
+          mt: 10,
+          mb: 0.5,
           width: {
             xs: '100%', 
             sm: '80%',   
@@ -149,7 +149,7 @@ const VehicleDashboard = () => {
           {toastMessage}
         </Alert>
       </Snackbar>
-    </>
+    </Box>
   );
 };
 

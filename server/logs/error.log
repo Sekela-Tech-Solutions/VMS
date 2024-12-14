@@ -1,0 +1,1 @@
+2024-12-14T14:19:15.928Z: [31merror[39m: POST /auth/signup 400 25.173 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Sat, 14 Dec 2024 14:19:15 GMT - error-message: "body.fullName" is not allowed to be empty
